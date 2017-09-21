@@ -16,10 +16,12 @@ public class PlayerHealth : MonoBehaviour , Idamageable
         health -= DamageTaken;
     }
     public bool alive;
-	// Update is called once per frame
+    // Update is called once per frame
+    public ParticleSystem Death;
 	void Update () {
 		if(health <= 0)
         {
+            Instantiate(Death, transform.position, transform.rotation);
             alive = false;
             Destroy(gameObject);
         }
