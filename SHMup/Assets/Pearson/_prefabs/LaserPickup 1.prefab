@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 2
-  weapontime: 10
+  weapontime: 4
 --- !u!198 &198752083720902686
 ParticleSystem:
   m_ObjectHideFlags: 1
