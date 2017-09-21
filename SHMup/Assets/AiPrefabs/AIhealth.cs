@@ -11,12 +11,14 @@ public class AIhealth : MonoBehaviour, Ikillable, Idamageable {
 	void Start () {
         MaxHealth = health;
 	}
-	
+    public ParticleSystem Death;
 
     public void Die()
     {
         if(health <= 0)
         {
+            ParticleSystem DeathPS = Instantiate(Death,transform.position,transform.rotation);
+            Destroy(DeathPS, 4);
             Destroy(gameObject);
         }
     }

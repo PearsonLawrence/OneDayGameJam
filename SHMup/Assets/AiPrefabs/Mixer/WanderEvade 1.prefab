@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 114414691065304680}
   - component: {fileID: 54012986387591856}
   m_Layer: 0
-  m_Name: WanderEvade
+  m_Name: WanderEvade 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  Death: {fileID: 198032818046977166, guid: ffb314c803698ed4da6088cd32ed4014, type: 2}
+  Death: {fileID: 0}
 --- !u!114 &114733792485437084
 MonoBehaviour:
   m_ObjectHideFlags: 1
