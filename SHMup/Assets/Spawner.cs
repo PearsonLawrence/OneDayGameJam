@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour {
     public int[] count;
     public float timer;
     private float startTime;
-
+    public int size;
 	// Use this for initialization
 	void Start () {
         startTime = timer;
@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour {
 
     void SpawnEnemy()
     {
-        int idx = Random.Range(0,3);
+        int idx = Random.Range(0, size -1);
         var SpawnBaby = Enemies[idx];
         for(int i = 0; i < count[idx]; i++)
         {
