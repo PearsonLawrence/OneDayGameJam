@@ -8,12 +8,16 @@ public class Spawner : MonoBehaviour {
     public int[] count;
     public float timer;
     private float startTime;
+    public float delay;
+    private float startDelay;
     public int size;
     public int zRange;
     public int xRange;
+    bool Spawn = false;
 	// Use this for initialization
 	void Start () {
         startTime = timer;
+        startDelay = delay;
 	}
 	
 
@@ -30,6 +34,7 @@ public class Spawner : MonoBehaviour {
             
         }
         count[idx]++;
+        Spawn = false;
     }
 
 	// Update is called once per frame
@@ -39,8 +44,20 @@ public class Spawner : MonoBehaviour {
 
         if(timer <= 0)
         {
+            Spawn = true;
             timer = startTime;
-            SpawnEnemy();
+           
+        }
+
+        if(Spawn == true)
+        {
+            delay -= Time.deltaTime;
+            if(delay <= 0 )
+            {
+                SpawnEnemy();
+                delay = startDelay;
+            }
+           
         }
 	}
 }

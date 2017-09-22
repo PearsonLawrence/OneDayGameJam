@@ -172,6 +172,7 @@ MonoBehaviour:
   - {fileID: 1210624786927148, guid: 532863a755156c64bb4c441a32c055c8, type: 2}
   count: 0a00000006000000
   timer: 5
+  delay: 2
   size: 2
   zRange: 10
   xRange: 10
@@ -269,6 +270,7 @@ MonoBehaviour:
   - {fileID: 1210624786927148, guid: 532863a755156c64bb4c441a32c055c8, type: 2}
   count: 0a00000006000000
   timer: 5
+  delay: 0
   size: 2
   zRange: 10
   xRange: -10
@@ -378,6 +380,7 @@ MonoBehaviour:
   - {fileID: 1210624786927148, guid: 532863a755156c64bb4c441a32c055c8, type: 2}
   count: 0a00000006000000
   timer: 5
+  delay: 1.5
   size: 2
   zRange: -10
   xRange: 10
@@ -675,6 +678,11 @@ Prefab:
     - target: {fileID: 4631972940532620, guid: 9659b8464a76c71438e9c01df92d73de, type: 2}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926760426062420, guid: 9659b8464a76c71438e9c01df92d73de,
+        type: 2}
+      propertyPath: delay
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9659b8464a76c71438e9c01df92d73de, type: 2}
