@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 135685044834403940}
   m_Layer: 0
   m_Name: PA_Drone
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1857268865912072}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 91.30658, y: 3, z: 81.02557}
+  m_LocalPosition: {x: 94.80213, y: 3, z: -79.33059}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4838354264729422}
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
-  death: {fileID: 0}
+  death: {fileID: 198935777629333490, guid: fdd4fa957a7ad7a4e8ea083fed94b59b, type: 2}
 --- !u!135 &135685044834403940
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  death: {fileID: 198935777629333490, guid: fdd4fa957a7ad7a4e8ea083fed94b59b, type: 2}
 --- !u!114 &114330163305518750
 MonoBehaviour:
   m_ObjectHideFlags: 1
