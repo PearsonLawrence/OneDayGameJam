@@ -11,11 +11,13 @@ public class AIDamage : MonoBehaviour {
 	void Start () {
 		
 	}
-
+    public ParticleSystem death;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            ParticleSystem deathPS = Instantiate(death, transform.position, transform.rotation);
+            Destroy(deathPS, 5);
             collision.gameObject.GetComponent<Idamageable>().TakeDamage(Damage);
             Destroy(gameObject);
         }
